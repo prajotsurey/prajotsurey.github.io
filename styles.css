@@ -195,6 +195,7 @@ section:nth-child(2n){
     min-height: 100vh;
     display: grid;
     place-content: center;
+    border-top: none;
   }
   .container{
     padding: 2rem;
