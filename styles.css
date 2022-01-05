@@ -1,0 +1,216 @@
+html{
+  height: 100%;
+  width: 100%;
+} 
+
+body{
+  margin: 0px;
+  padding: 0px;
+  font-family: 'IBM Plex Mono', monospace;
+  color: var(--text-color);
+  --background-color: #f2f2f2;
+  --text-color: black;
+  --pfp-background-color: #737373;
+  --alternate-background-color: #E0E0E0;
+  --polka-dot-color:#d2d2d2;
+  --alternate-polka-dot-color:#ccc;
+}
+
+body.dark-theme{
+  --background-color: #404040;
+  --text-color: white;
+  --pfp-background-color: #737373;
+  --alternate-background-color: #555;
+  --polka-dot-color:#535353;
+  --alternate-polka-dot-color:#686868;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 2px solid #DF294B;
+  font-weight: bold;
+}
+
+a:hover{
+  color: #DF294B;
+}
+
+a:focus{
+  color: #DF294B;
+}
+
+h1{
+  font-weight: 600;
+}
+
+ul{
+  list-style: none;
+  padding-left: 0px;
+}
+
+#contact-logos li{
+  display: inline-block;
+  align-items: center;
+}
+
+#contact-logos a{
+  border-bottom: none;
+}
+
+
+header{
+  position: fixed;
+  width: 100%;
+}
+
+#toggle-btn{
+  float: right;
+  background:transparent;
+  border: none;
+  position: fixed;
+  right: 1em;
+  top: 1em;
+  padding: 0;
+}
+
+#toggle-btn svg{
+  height: 1.5rem;
+}
+
+#toggle-btn svg:hover{
+  color:red;
+}
+
+/*  */
+
+section{
+  background-color: var(--background-color);
+  background-image: radial-gradient(var(--polka-dot-color) 5%, var(--background-color) 5%);
+  background-size: 30px 30px;
+  border: 2rem var(--background-color) solid;
+}
+
+section:nth-child(2n){
+  background-color: var(--alternate-background-color);
+  background-image: radial-gradient(var(--alternate-polka-dot-color) 5%, var(--alternate-background-color) 5%);
+  background-size: 30px 30px;
+  border: 2rem var(--alternate-background-color) solid;
+}
+
+.container{
+  max-width: 60rem;
+  margin:auto;
+  padding: 1rem;
+}
+
+
+#first-section{
+  min-height: 100vh;
+}
+
+#first-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+#pfp-aside{
+  border-radius: 100%;
+  overflow: hidden;
+  background-color: var( --pfp-background-color);
+  display: flex;
+  max-width: 13rem;
+  margin-bottom: 2.5rem;
+  margin-top: 2.5rem;
+}
+
+#pfp-image{
+  max-width: 100%;
+  height: auto;
+}
+
+#first-main-text{
+  margin-bottom: 5rem;
+  max-width: 35rem;
+}
+
+#contact-logos{
+  margin-top: 1.7rem;
+  position: absolute;
+  margin-left: -0.5rem;
+}
+
+#contact-logos li{
+  margin-left: 0.5rem;
+}
+
+#contact-logos svg{
+  height: 1.5rem;
+  width: auto;
+}
+
+.section-heading{
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.entry-list li{
+  margin-bottom: 2rem;
+}
+
+.entry-list li:last-child{
+  margin-bottom: auto;
+}
+
+.entry-heading{
+  margin-bottom: 1rem;
+}
+
+.entry-subheading{
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+@media screen and (min-width:850px){
+  #pfp-aside-container{
+    margin-left: 3rem;
+    margin-bottom: 0rem;
+    margin-top: 0rem;
+  }
+
+  #pfp-aside{
+    max-width: 13rem;
+  }
+
+  #first-container{
+    flex-direction: row-reverse;
+  }
+
+  #contact-logos{
+    margin-top: 3rem;
+  }
+
+  #first-section{
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+  }
+  .container{
+    padding: 2rem;
+  }
+
+  #first-main-text{
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width:1200px){
+  #pfp-aside{
+    max-width: 15rem;
+  }
+}
+
+.none{
+  display: none;
+}
