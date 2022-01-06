@@ -1,2 +1,2 @@
 # prajotsurey.github.io
-Personal Website
+Personal Website made using HTML, CSS and Javscript
