@@ -14,26 +14,32 @@ body{
   --alternate-background-color: #E0E0E0;
   --polka-dot-color:#d2d2d2;
   --alternate-polka-dot-color:#ccc;
+  --link-color: #ec2459;
 }
 
 body.dark-theme{
   --background-color: #404040;
   --text-color: white;
   --pfp-background-color: #737373;
-  --alternate-background-color: #555;
+  --alternate-background-color: #484848;
   --polka-dot-color:#535353;
-  --alternate-polka-dot-color:#686868;
+  --alternate-polka-dot-color:#595959;
+  --link-color: #ff5984;
+}
+
+path{
+  stroke: var(--link-color);
+  fill: var(--link-color);
+}
+
+.mail-logo{
+  fill: none;
 }
 
 a{
   text-decoration: none;
-  color: inherit;
-  border-bottom: 2px solid #DF294B;
+  color: var(--link-color);
   font-weight: bold;
-}
-
-a:hover{
-  color: #DF294B;
 }
 
 a:focus{
@@ -49,12 +55,12 @@ ul{
   padding-left: 0px;
 }
 
-#contact-logos li{
+.contact-logos li{
   display: inline-block;
   align-items: center;
 }
 
-#contact-logos a{
+.contact-logos a{
   border-bottom: none;
 }
 
@@ -62,6 +68,20 @@ ul{
 header{
   position: fixed;
   width: 100%;
+}
+
+footer{
+  border: 2rem solid transparent;
+  background-color: var(--alternate-background-color);
+}
+
+.footer-sub-container{
+  display: flex;
+  flex-direction: column;
+}
+
+footer ul{
+  margin-bottom: 0;
 }
 
 #toggle-btn{
@@ -137,17 +157,20 @@ section:nth-child(2n){
   max-width: 35rem;
 }
 
-#contact-logos{
+#hero-logos{
   margin-top: 1.7rem;
   position: absolute;
+}
+
+.contact-logos{
   margin-left: -0.5rem;
 }
 
-#contact-logos li{
+.contact-logos li{
   margin-left: 0.5rem;
 }
 
-#contact-logos svg{
+.contact-logos svg{
   height: 1.5rem;
   width: auto;
 }
@@ -166,13 +189,18 @@ section:nth-child(2n){
 }
 
 .entry-heading{
-  margin-bottom: 1rem;
+  margin-bottom: 0.2rem;
 }
 
 .entry-subheading{
   margin-top: 0.5rem;
   margin-bottom: 1rem;
 }
+
+.entry-links{
+  margin-bottom: 1rem;
+}
+
 @media screen and (min-width:850px){
   #pfp-aside-container{
     margin-left: 3rem;
@@ -188,7 +216,7 @@ section:nth-child(2n){
     flex-direction: row-reverse;
   }
 
-  #contact-logos{
+  #hero-logos{
     margin-top: 3rem;
   }
 
@@ -204,6 +232,16 @@ section:nth-child(2n){
 
   #first-main-text{
     margin-bottom: 0px;
+  }
+
+  .footer-sub-container{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  footer ul{
+    margin: 0;
   }
 }
 

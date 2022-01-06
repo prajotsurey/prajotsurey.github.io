@@ -49,13 +49,13 @@
           I spend my free time reading, taking pictures and watching
           cat videos on reddit.
 
-          <div id="contact-logos">
+          <div class="contact-logos" id="hero-logos">
             <ul>
               <li>
                 <a href="mailto:prajotsurey@gmail.com">
                   <svg width="48" height="37" viewBox="0 0 46 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M41.25 3H5.25C4.00736 3 3 4.00736 3 5.25V32.25C3 33.4926 4.00736 34.5 5.25 34.5H41.25C42.4926 34.5 43.5 33.4926 43.5 32.25V5.25C43.5 4.00736 42.4926 3 41.25 3Z" stroke="#DF294B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M2.75 5.5L23.5786 21.25L43.25 5.5" stroke="#DF294B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path class="mail-logo" d="M41.25 3H5.25C4.00736 3 3 4.00736 3 5.25V32.25C3 33.4926 4.00736 34.5 5.25 34.5H41.25C42.4926 34.5 43.5 33.4926 43.5 32.25V5.25C43.5 4.00736 42.4926 3 41.25 3Z" stroke="#DF294B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path class="mail-logo" d="M2.75 5.5L23.5786 21.25L43.25 5.5" stroke="#DF294B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>                    
                 </a>
               </li>
@@ -82,16 +82,40 @@
     <section>
       <div class="container">
         <h2 class="section-heading">
+          Skillset
+        </h2>
+        <ul class="entry-list">
+          <li>
+            <div>
+              <h3 class="entry-heading">
+                Programming
+              </h3>
+              HTML, CSS, Javascript, React, Node, NextJs, GraphQl, Apollo, Git, Python, Javascript
+              <h3 class="entry-heading">
+                Tools
+              </h3>
+              Photoshop, Figma, Premiere Pro
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <h2 class="section-heading">
           Work
         </h2>
         <ul class="entry-list">
           <li>
             <div>
               <h3 class="entry-heading">
-                <a href="https://quizly.proficienttestprep.com/" target="_blank">
-                  Proficient Test Prep - 2021
-                </a>
+                Proficient Test Prep - 2021
               </h3>
+              <div class="entry-links">
+                <a href="https://quizly.proficienttestprep.com/" target="_blank">
+                  Website
+                </a>
+              </div>
               <h4 class="entry-subheading">
                 Software Engineer Intern
               </h4>
@@ -113,23 +137,32 @@
           <li>
             <div>
               <h3 class="entry-heading">
-                <a href="https://socialist-poutine-39664.herokuapp.com/" target="_blank">
-                  Fullstack Twitter Clone
-                </a>
+                Fullstack Twitter Clone
               </h3>
+              <div class="entry-links">
+                <a href="https://socialist-poutine-39664.herokuapp.com/" target="_blank">Website</a>,
+                <a href="https://github.com/prajotsurey/fullstack-twitter-clone" target="_blank">GitHub</a>
+              </div>
+              <div>                
                 A web app made using ReactJS, NodeJS,ExpressJS and Sequelize ORM with styling done using TailwindCSS.
                 Replicates the functionality of Twitter and allows creating, deleting, liking and bookmarking posts.
-            </div>
+              </div>
+
+              </div>
           </li>
           <li>
             <div>
               <h3 class="entry-heading">
-                <a href="https://polar-falls-76219.herokuapp.com/" target="_blank">
                 Fullstack Tumblr Clone
-                </a>
               </h3>
-              A web app made using NextJs, NodeJS, Apollo-Express-Server, GraphQL and TypeORM with styling done using TailwindCSS.
-              Replicates the functionality of Tumblr and allows creating, deleting, liking and bookmarking posts.
+              <div class="entry-links">
+                <a href="https://polar-falls-76219.herokuapp.com/" target="_blank">Website</a>,
+                <a href="https://github.com/prajotsurey/tumblr-clone-client" target="_blank">GitHub</a>
+              </div>
+              <div>
+                A web app made using NextJs, NodeJS, Apollo-Express-Server, GraphQL and TypeORM with styling done using TailwindCSS.
+                Replicates the functionality of Tumblr and allows creating, deleting, liking and bookmarking posts.
+              </div>
             </div>
           </li>
           <li>
@@ -137,6 +170,9 @@
               <h3 class="entry-heading">
                 Personal Website
               </h3>
+              <div class="entry-links">
+                <a href="https://github.com/prajotsurey/prajotsurey.github.io" target="_blank">GitHub</a>
+              </div>
               Made using HTML, CSS and Javascript. Hosted on githubpages.
             </div>
           </li>
@@ -146,7 +182,7 @@
     <section>
       <div class="container mb-2">
         <h2 class="section-heading">
-          Contact Me
+          Contact
         </h2>
         Contact me at <a href="mailto:prajotsurey@gmail.com" target="_blank">prajotsurey@gmail.com</a>,
         <a href="https://www.linkedin.com/in/prajotsurey/" target="_blank">LinkedIn</a>
@@ -159,10 +195,43 @@
         <br>
       </div>
     </section>
-    <section>
-      <div class="container"></div>
-    </section>
   </main>
+  <footer>
+    <div class="container">
+      <div class="footer-sub-container">
+        <div>
+          Prajot Surey
+        </div>
+        <div class="contact-logos">
+          <ul>
+            <li>
+              <a href="mailto:prajotsurey@gmail.com">
+                <svg width="48" height="37" viewBox="0 0 46 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="mail-logo" d="M41.25 3H5.25C4.00736 3 3 4.00736 3 5.25V32.25C3 33.4926 4.00736 34.5 5.25 34.5H41.25C42.4926 34.5 43.5 33.4926 43.5 32.25V5.25C43.5 4.00736 42.4926 3 41.25 3Z" stroke="#DF294B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path class="mail-logo" d="M2.75 5.5L23.5786 21.25L43.25 5.5" stroke="#DF294B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>                    
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/prajotsurey" target="_blank">
+                <svg width="40" height="40" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21.9989 5.99122e-07C11.2101 -0.00142083 2.0131 8.02401 0.285729 18.9473C-1.44164 29.8705 4.81065 40.4662 15.0468 43.9626C16.1492 44.1662 16.5439 43.4719 16.5439 42.8748C16.5439 42.3388 16.5263 40.9186 16.5197 39.0301C10.401 40.3871 9.10894 36.0042 9.10894 36.0042C8.70613 34.6403 7.84017 33.4697 6.66809 32.7045C4.68366 31.3046 6.82023 31.3363 6.82023 31.3363C8.23287 31.535 9.47617 32.3935 10.1871 33.6612C10.7889 34.7835 11.8028 35.6128 13.0035 35.9649C14.2042 36.3169 15.4922 36.1625 16.5814 35.536C16.6838 34.3917 17.1801 33.3221 17.9815 32.5191C13.0998 31.9514 7.96679 30.0155 7.96679 21.3696C7.93969 19.1333 8.74931 16.9715 10.229 15.3289C9.55951 13.3824 9.63836 11.2474 10.4495 9.35837C10.4495 9.35837 12.295 8.75001 16.4954 11.6674C20.0979 10.6543 23.8999 10.6543 27.5024 11.6674C31.7049 8.74775 33.5483 9.35837 33.5483 9.35837C34.3632 11.2465 34.4421 13.383 33.7688 15.3289C35.2539 16.9713 36.0628 19.1388 36.0266 21.3786C36.0266 30.0472 30.8891 31.9514 25.9898 32.51C27.0467 33.6183 27.5887 35.1388 27.4781 36.6849C27.4781 39.7018 27.4517 42.1353 27.4517 42.8748C27.4517 43.4787 27.8441 44.1797 28.9664 43.9581C39.1983 40.4557 45.4439 29.8594 43.713 18.9391C41.9821 8.01874 32.7855 -0.00253109 21.9989 5.99122e-07Z" fill="#DF294B"/>
+                  </svg> 
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/prajotsurey/" target="_blank">
+                <svg width="40" height="40" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M24.4444 44H14.6666V14.6667H24.4444V19.5556C26.5286 16.904 29.6893 15.3232 33.061 15.246C39.1247 15.2797 44.0175 20.214 44 26.2778V44H34.2221V27.5C33.8311 24.7686 31.4887 22.7421 28.7295 22.748C27.5226 22.7861 26.3834 23.3146 25.5748 24.2113C24.7662 25.108 24.358 26.2956 24.4444 27.5V44ZM9.77776 44H0V14.6667H9.77776V44ZM4.88888 9.77778C2.18883 9.77778 0 7.58895 0 4.88889C0 2.18883 2.18883 0 4.88888 0C7.58893 0 9.77776 2.18883 9.77776 4.88889C9.77776 6.1855 9.26268 7.42901 8.34584 8.34586C7.429 9.2627 6.18549 9.77778 4.88888 9.77778Z" fill="#DF294B"/>
+                  </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+  </footer>
   <script>
     btn = document.querySelector("#toggle-btn")
     lightIcon = document.querySelector("#light-icon")
